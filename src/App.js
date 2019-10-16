@@ -10,7 +10,7 @@ class App extends React.Component {
   };
   componentDidMount() {
     this.setState({ isLoading: true });
-    fetch("http://localhost:3000/data/newsData.json")
+    fetch("https://epp-react-news.herokuapp.com/data/newsData.json")
       .then(response => {
         return response.json();
       })
